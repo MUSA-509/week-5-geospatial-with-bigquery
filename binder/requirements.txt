@@ -2,4 +2,3 @@ cartoframes
 geopandas
 google-cloud-bigquery[bqstorage,pandas]
 pandas
-pyarrow
