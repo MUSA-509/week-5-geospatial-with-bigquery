@@ -9,7 +9,7 @@
 **Create GCP Project**
 
 1. Create a [project](https://cloud.google.com/resource-manager/docs/creating-managing-projects) in Google Cloud Platform (GCP) console
-  ![](images/gcp-project-dropdown.png)
+  <img src="images/gcp-project-dropdown." width=560 />
 2. Click "New Project" in the upper right of the new dialog
 3. Give it a useful name, like "MUSA-509" and create it.
 4. After a few seconds, the project will be created. Now selected it from the project drop down.
@@ -22,20 +22,20 @@ GCP Storage is similar to AWS S3. They're both cloud storage solutions with many
 2. Select "Storage". This will list 'buckets' for your project. A bucket is a high-level storage unit, conceptually similar to a folder
 3. Click "+ Create Bucket" and give it a useful name like `musa-509-datasets`
 4. Upload our good old Indego station status dataset to this new bucket
-  ![](images/bucket-upload.png)
+  <img src="images/bucket-upload." width=560 />
 
 **Add new table to BigQuery**
 
 1. Search for BigQuery in the console search again
 2. There should be a project listed in resources in the lower left
-  ![](images/bq-new-project.png)
+  <img src="images/bq-new-project." width=560 />
 3. Select that project and create a new dataset for it called `indego` and accept all of the defaults
 4. Select `+ Create Table` 
   a. Choose Google Cloud Storage for the source
-    ![](images/gs-source.png)
+    <img src="images/gs-source." width=560 />
   b. Give the table a name: `station_status`
   c. Under "Auto detect", check "Schema and input parameters". **Note** this will mean that our text field with the geometry won't be loaded
-    ![](images/schema-detection.png)
+    <img src="images/schema-detection." width=560 />
   d. Click "Create table"
 
 **Add explicit geographic field**
@@ -48,7 +48,7 @@ The geography was detected as a string, so we need to change the table to have i
     FROM `musa-509.indego.station_status`
   ```
 2. Select Query Settings
-  ![](images/query-settings.png)
+  <img src="images/query-settings." width=560 />
 3. Update the fields as they are here. This means that we will replace our existing table with the results of the query from above.
-  ![](images/query-settings-overwrite.png)
+  <img src="images/query-settings-overwrite." width=560 />
 4. Run the query! And then check your table after if completes.
