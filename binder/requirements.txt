@@ -1,5 +1,5 @@
 cartoframes
 geopandas
-google-cloud-bigquery[pandas]
+google-cloud-bigquery[bqstorage,pandas]
 pandas
 pyarrow
