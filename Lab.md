@@ -77,4 +77,4 @@ The geography was detected as a string, so we need to change the table to have i
 1. Create Service Account Key: <https://console.cloud.google.com/apis/credentials/serviceaccountkey>
   ![](images/service-account.png)
 2. Save this file to your computer
-3. Launch Binder for this weeks Lab: <https://mybinder.org/v2/gh/MUSA-509/lecture-5-geospatial-with-bigquery/master?filepath=Lab-BigQuery-Demo.ipynb>
+3. Launch Binder for this weeks Lab: <https://mybinder.org/v2/gh/MUSA-509/week-5-geospatial-with-bigquery/master?filepath=Lab-BigQuery-Demo.ipynb>
