@@ -1,8 +1,26 @@
 # Week 5 Lab -- Geospatial with BigQuery
 
-
+0. Further homework hints, questions
 1. Add a new table to BigQuery
 2. Use BigQuery Python client to pull data and visualize in a Python environment
+
+
+## Homework
+
+**More CASE statments uses**
+
+Use as a way to 'pivot' a GROUP BY. 
+
+Let's use it to count stops by category (`location_type`). <https://gtfs.org/reference/static/#stopstxt>
+
+```SQL
+SELECT
+  SUM(CASE WHEN location_type = 1 THEN 1 ELSE 0 END) as num_stations,
+  SUM(CASE WHEN location_type = 2 THEN 1 ELSE 0 END) as num_entrances_exits,
+  SUM(CASE WHEN location_type = 3 THEN 1 ELSE 0 END) as num_generic,
+  SUM(CASE WHEN location_type = 4 THEN 1 ELSE 0 END) as num_boarding_areas
+FROM stops
+```
 
 ## Add a new table to BigQuery
 
@@ -52,3 +70,11 @@ The geography was detected as a string, so we need to change the table to have i
 3. Update the fields as they are here. This means that we will replace our existing table with the results of the query from above.
   ![](images/query-settings-overwrite.png)
 4. Run the query! And then check your table after if completes.
+
+
+## BigQuery Python Client
+
+1. Create Service Account Key: <https://console.cloud.google.com/apis/credentials/serviceaccountkey>
+  ![](images/service-account.png)
+2. Save this file to your computer
+3. Launch Binder for this weeks Lab: <https://mybinder.org/v2/gh/MUSA-509/lecture-5-geospatial-with-bigquery/master?filepath=Lab-BigQuery-Demo.ipynb>
