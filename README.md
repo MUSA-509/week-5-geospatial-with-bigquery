@@ -4,7 +4,7 @@
 * Lecture
   * [Slide deck](https://docs.google.com/presentation/d/1H3kZH8zwgeU5o7EQV0Ctcq3LkyaEMSSvPZ6gfTkWd3E/edit?usp=sharing)
   * [Lecture notes](Lecture.md)
-* Lab - posted Thursday
+* [Lab](Lab.md)
 
 ## Homework
 
