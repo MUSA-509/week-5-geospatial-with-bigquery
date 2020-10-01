@@ -1,8 +1,8 @@
 # Week 5 Lab -- Geospatial with BigQuery
 
-0. Further homework hints, questions
-1. Add a new table to BigQuery
-2. Use BigQuery Python client to pull data and visualize in a Python environment
+0. [Further homework hints, questions](#Homework)
+1. [Add a new table to BigQuery](#add-a-new-table-to-bigquery)
+2. [Use BigQuery Python client to pull data and visualize in a Python environment](#bigquery-python-client)
 
 
 ## Homework
