@@ -1,4 +1,4 @@
 cartoframes
 geopandas
-google-cloud-bigquery[bqstorage,pandas]
+google-cloud-bigquery[pandas]
 pandas
