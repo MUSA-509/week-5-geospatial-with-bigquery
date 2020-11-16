@@ -6,36 +6,36 @@
 ## Outline
 
 1. What is BigQuery?
-  - Petabyte-scale "Data warehouse" that processes queries "massively in parallel"
-  - Part of Google Cloud Platform
-  - All public datasets can be accessed without importing them, just referencing them correctly in the query
+   - Petabyte-scale "Data warehouse" that processes queries "massively in parallel"
+   - Part of Google Cloud Platform
+   - All public datasets can be accessed without importing them, just referencing them correctly in the query
 2. Features
-  - SaaS - fully managed for you
-  - How does it compare with PostGIS (and other offerings)? <https://ual.sg/post/2020/07/03/a-comparison-of-spatial-functions-postgis-athena-prestodb-bigquery-vs-redshift/>
-  - [Machine Learning through SQL](https://cloud.google.com/bigquery-ml/docs/introduction)
+   - SaaS - fully managed for you
+   - How does it compare with PostGIS (and other offerings)? <https://ual.sg/post/2020/07/03/a-comparison-of-spatial-functions-postgis-athena-prestodb-bigquery-vs-redshift/>
+   - [Machine Learning through SQL](https://cloud.google.com/bigquery-ml/docs/introduction)
 3. Why are we talking about this?
-  - It may turn out that you want data bigger than is appropriate for your own PostGIS instance
-  - Easier to manage than your own PostGIS
-  - Handles queries and datasets in seconds that would easily break Carto
+   - It may turn out that you want data bigger than is appropriate for your own PostGIS instance
+   - Easier to manage than your own PostGIS
+   - Handles queries and datasets in seconds that would easily break Carto
 4. Access to datasets
-  - [Public data](https://cloud.google.com/bigquery/public-data)
+   - [Public data](https://cloud.google.com/bigquery/public-data)
 5. BigQuery GIS
-  - Still under active development, not fully supported or as feature-filled as PostGIS
-  - everything is a geography type!
-  - all measurement functions take meters as input, or return answers in meters
+   - Still under active development, not fully supported or as feature-filled as PostGIS
+   - everything is a geography type!
+   - all measurement functions take meters as input, or return answers in meters
 6. Query formats, referencing tables
 7. [GIS functions](https://cloud.google.com/bigquery/docs/reference/standard-sql/geography_functions)
 8. Introduction to the console
-  - Query editor
-  - projects list, pins
-  - Pinning public datasets
-  - schema/details/preview
-  - query history, job history
-  - geoviz, data studio
+   - Query editor
+   - projects list, pins
+   - Pinning public datasets
+   - schema/details/preview
+   - query history, job history
+   - geoviz, data studio
 9. Demos / examples
-  1. Iowa Liquor Sales
-  2. Covid Open Data
-  3. Geographic clustering of wildfires
+   1. Iowa Liquor Sales
+   2. Covid Open Data
+   3. Geographic clustering of wildfires
 
 ## Demos
 
